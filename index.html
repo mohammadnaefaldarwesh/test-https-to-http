@@ -9,16 +9,16 @@
   </head>
 
   <body>
-    <div class="text"></div>
+    <div class="text"> <botton onClick="getData">test https to http</botton></div>
   </body>
   <script>
     const testURL = 'http://jsonplaceholder.typicode.com/todos/1';
-    const getData = async (url) => {
-      let res = await fetch(url);
+    const getData = async () => {
+      let res = await fetch(testURL);
       let results = await res.json();
       console.log(results);
     };
 
-    getData(testURL);
+//     getData(testURL);
   </script>
 </html>
