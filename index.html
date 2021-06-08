@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!--     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Document</title>
   </head>
 
@@ -15,8 +15,8 @@
     const testURL = 'http://www.mohammaddarwesh.com/js/chunk-vendors.db6a3783.js';
     const getData = async () => {
       let res = await fetch(testURL);
-      let results = await res.json();
-      console.log(results);
+//       let results = await res.json();
+      console.log(res);
     };
 
 //     getData(testURL);
