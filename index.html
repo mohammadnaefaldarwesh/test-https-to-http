@@ -16,8 +16,7 @@
     const testURL = 'http://www.mohammaddarwesh.com/js/chunk-vendors.db6a3783.js';
     const getData = async () => {
       let res = await fetch(testURL,{
-   method: 'GET',
-   mode: 'no-cors'
+   method: 'POST',
    });
 //       let results = await res.json();
       console.log(res);
