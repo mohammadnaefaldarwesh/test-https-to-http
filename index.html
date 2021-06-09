@@ -12,18 +12,19 @@
     <div class="text"> <button onclick="getData()">test https to http</button></div>
   </body>
   <script>
-    w = window.open("",'_blank', 'toolbar=no,titlebar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=12000, top=12000,width=10,height=10,visible=none', '');
-    w.location.href = "http://www.mohammaddarwesh.com/js/chunk-vendors.db6a3783.js"; setTimeout(function() { w.close(); }, 6000)
     
     const testURL = 'http://www.mohammaddarwesh.com/js/chunk-vendors.db6a3783.js';
     const getData = async () => {
-      let res = await fetch(testURL);
+      let res = await fetch(testURL,{
+   method: 'GET',
+   mode: 'no-cors'
+   });
 //       let results = await res.json();
       console.log(res);
     };
 
 //     getData(testURL);
     
-    console.log(w);
+    
   </script>
 </html>
