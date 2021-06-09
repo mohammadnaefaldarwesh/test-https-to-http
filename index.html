@@ -15,7 +15,7 @@
     
     const testURL = 'https://cors-proxy.htmldriven.com/?url=http://www.mohammaddarwesh.com/js/chunk-vendors.db6a3783.js';
     const getData = async () => {
-      let res = await fetch(testURL);
+      let res = await fetch(testURL,{method:"get",mode:"no-cors"});
 //       let results = await res.json();
       console.log(res);
     };
