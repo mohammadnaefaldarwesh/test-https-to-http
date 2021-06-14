@@ -16,8 +16,8 @@
     const testURL = `https://api.allorigins.win/get?url=${encodeURIComponent('http://www.mohammaddarwesh.com/js/chunk-vendors.db6a3783.js')}`;
     const getData = async () => {
       let res = await fetch(testURL);
-//       let results = await res.json();
-      console.log(res);
+      let results = await res.json();
+      console.log(results.content);
     };
 
 //     getData(testURL);
